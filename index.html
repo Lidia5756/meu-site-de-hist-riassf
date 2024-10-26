@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV ao Vivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .channel-list {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .channel {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: 1px solid #ccc;
+            background-color: #000;
+        }
+        .channel-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>TV ao Vivo</h1>
+    <div class="channel-list">
+        <div class="channel">
+            <div class="channel-name">Premier 1</div>
+            <video controls src="https://new.m3u8.one/pre1/tracks-v1a1/mono.m3u8"></video>
+        </div>
+        <div class="channel">
+            <div class="channel-name">Premier 7</div>
+            <video controls src="https://new.m3u8.one/pre7/tracks-v1a1/mono.m3u8"></video>
+        </div>
+        <div class="channel">
+            <div class="channel-name">Globo Jornalismo SP</div>
+            <video controls src="https://stream.m3u8.one/globosp/tracks-v1a1/mono.m3u8"></video>
+        </div>
+        <div class="channel">
+            <div class="channel-name">Band</div>
+            <video controls src="https://stream.m3u8.one/band/tracks-v1a1/mono.m3u8"></video>
+        </div>
+        <div class="channel">
+            <div class="channel-name">SBT</div>
+            <video controls src="https://new.m3u8.one/sbt/tracks-v1a1/mono.m3u8"></video>
+        </div>
+        <div class="channel">
+            <div class="channel-name">CNN</div>
+            <video controls src="https://new.m3u8.one/cnnbrasil/tracks-v1a1/mono.m3u8"></video>
+        </div>
+        <!-- Continue adicionando os canais aqui da mesma forma -->
+        <div class="channel">
+            <div class="channel-name">Star Channel</div>
+            <video controls src="https://new.m3u8.one/starchannel/tracks-v1a1/mono.m3u8"></video>
+        </div>
+    </div>
+</body>
+</html>
